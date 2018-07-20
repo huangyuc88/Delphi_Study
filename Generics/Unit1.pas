@@ -87,7 +87,7 @@ end;
 
 procedure TForm1.Button4Click(Sender: TObject);
 begin
-  //List.Remove(0);
+  List.delete(0);
   Button1.Click;
 end;
 
