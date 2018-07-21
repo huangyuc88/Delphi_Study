@@ -80,6 +80,10 @@ type
     procedure Button23Click(Sender: TObject);
     procedure Button24Click(Sender: TObject);
     procedure Button25Click(Sender: TObject);
+    procedure Button26Click(Sender: TObject);
+    procedure Button27Click(Sender: TObject);
+    procedure Button28Click(Sender: TObject);
+    procedure Button29Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -185,7 +189,6 @@ begin
   FreeAndNil(reg);
 end;
 
-
 procedure TfrmMain.Button5Click(Sender: TObject);
 // + 的使用, + 是重复 1 个或多个
 var
@@ -202,7 +205,6 @@ begin
 
   FreeAndNil(reg);
 end;
-
 
 procedure TfrmMain.Button6Click(Sender: TObject);
 // * 的使用, * 是重复 0 个或多个
@@ -221,7 +223,6 @@ begin
   FreeAndNil(reg);
 end;
 
-
 procedure TfrmMain.Button7Click(Sender: TObject);
 // ? 的使用, ? 是重复 0 个或 1 个
 var
@@ -238,7 +239,6 @@ begin
 
   FreeAndNil(reg);
 end;
-
 
 procedure TfrmMain.Button8Click(Sender: TObject);
 //大括号的使用<1>, 指定重复数
@@ -280,7 +280,6 @@ begin
 
   FreeAndNil(reg);
 end;
-
 
 procedure TfrmMain.Button10Click(Sender: TObject);
 //匹配几个范围
@@ -454,7 +453,6 @@ begin
   FreeAndNil(reg);
 end;
 
-
 procedure TfrmMain.Button20Click(Sender: TObject);
 // \b 单词边界
 var
@@ -473,7 +471,6 @@ begin
 
   FreeAndNil(reg);
 end;
-
 
 procedure TfrmMain.Button21Click(Sender: TObject);
 // \B 非单词边界
@@ -513,7 +510,6 @@ begin
   FreeAndNil(reg);
 end;
 
-
 procedure TfrmMain.Button23Click(Sender: TObject);
 // $ 行尾
 var
@@ -532,7 +528,6 @@ begin
 
   FreeAndNil(reg);
 end;
-
 
 procedure TfrmMain.Button24Click(Sender: TObject);
 //贪婪匹配
@@ -567,6 +562,100 @@ begin
 
   FreeAndNil(reg);
 end;
+
+procedure TfrmMain.Button26Click(Sender: TObject);
+// ? 号的意义是匹配 0-1 次, 如果需要匹配 ? 怎么办
+var
+  reg: TPerlRegEx;
+begin
+  reg := TPerlRegEx.Create();
+
+  reg.Subject := '你好吗? 还行!?fsdf';
+  //reg.RegEx   := '\?|!'; // 加转义用的 \
+  reg.RegEx   := '\?|\!|\好'; // 给没必要的 "!" 与 "好" 加了 \ 在本例中也正常了
+  reg.Replacement := '◆';
+  reg.ReplaceAll;
+
+  ShowMessage(reg.Subject); //返回: 你好吗◆ 还行◆
+
+  FreeAndNil(reg);
+end;
+
+procedure TfrmMain.Button27Click(Sender: TObject);
+var
+  reg: TPerlRegEx;
+  i:Integer;
+begin
+  reg := TPerlRegEx.Create();
+
+  i:=2;
+  reg.Subject := 'one two three four five six seven eight nine ten';
+  case i of
+  0:begin
+      //准备: 我们先写一个搜索所有英文单词的表达式
+      reg.RegEx   := '\b[A-Za-z]+\b'; //这个表达式就可以找到所有的英文单词
+      reg.Replacement := '◆';
+    end;
+  1:begin
+      //假如我们只需要每个单词的第一个字母呢? 这要用到子表达式
+      reg.RegEx   := '\b([A-Za-z])[A-Za-z]*\b'; //注意表达式中有子表达式, 在 () 中
+      reg.Replacement := '\1'; // \1 引用了第一个子表达式
+    end;
+  2:begin
+      //表达式中可以有多个子表达式
+      reg.Subject := 'one two three ten';
+      reg.RegEx   := '(t)(\w+)';
+      reg.Replacement := '[\1-\2:\0]'; // \1\2 分别引用对应的子表达式; \0 引用整个表达式
+    end;
+  end;
+  reg.ReplaceAll;
+  ShowMessage(reg.Subject); //返回: ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆ ◆
+
+  FreeAndNil(reg);
+end;
+              
+procedure TfrmMain.Button28Click(Sender: TObject);
+var
+  reg: TPerlRegEx;
+begin
+  reg := TPerlRegEx.Create();
+  {
+  reg.Subject := 'Delphi 6; Delphi 7; Delphi 2007; Delphi 2007 Net';
+  //reg.RegEx   := 'Delphi (?=2007)'; // ?=  //匹配右边
+  reg.RegEx   := 'Delphi (?!2007)'; // ?!  //不匹配右边
+  }
+  reg.Subject := '111, 222, ￥333, ￥444, 55, 6666, ￥77, ￥8888';
+  reg.RegEx   := '(?<=￥)\d{3}'; // ?<= //匹配左边
+  //reg.RegEx   := '(?<!￥)\d{3}'; // ?<! //不匹配左边
+
+  reg.Replacement := '◆';
+  reg.ReplaceAll;
+
+  ShowMessage(reg.Subject); //返回: Delphi 6; Delphi 7; ◆2007; Delphi Net
+
+  FreeAndNil(reg);
+end;
+
+procedure TfrmMain.Button29Click(Sender: TObject);
+//显示找到的第一个
+var
+  reg: TPerlRegEx;
+begin
+  reg := TPerlRegEx.Create();
+
+  reg.Subject := 'CodeGear Delphi 2007 for Win32';
+  reg.RegEx   := '\d';
+
+  if reg.Match then
+    ShowMessage('找到')  //2
+  else
+    ShowMessage('没找到');
+
+
+  FreeAndNil(reg);
+end;
+
+
 
 end.
 

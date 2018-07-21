@@ -1,7 +1,7 @@
 object frmMain: TfrmMain
   Left = 338
   Top = 176
-  Width = 651
+  Width = 627
   Height = 475
   Caption = 'frmMain'
   Color = clBtnFace
@@ -20,6 +20,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = #26367#25442#19968#33324#23383#31526#20018
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 0
     OnClick = Button1Click
   end
@@ -29,6 +35,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = #19981#21306#20998#22823#23567#20889
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 1
     OnClick = Button2Click
   end
@@ -38,6 +50,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = #20013#25991#26367#25442
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 2
     OnClick = Button3Click
   end
@@ -47,6 +65,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = '| '#26159#25110#32773
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 3
     OnClick = Button4Click
   end
@@ -56,6 +80,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = '+ '#26159#37325#22797'1'#25110#22810
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 4
     OnClick = Button5Click
   end
@@ -65,6 +95,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = '* '#26159#37325#22797'0'#25110#22810
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 5
     OnClick = Button6Click
   end
@@ -74,6 +110,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = '? '#26159#37325#22797' 0 '#25110' 1'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 6
     OnClick = Button7Click
   end
@@ -83,6 +125,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = '{ }'#25351#23450#37325#22797#25968
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 7
     OnClick = Button8Click
   end
@@ -92,6 +140,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = #21305#37197#25152#26377#22823#20889#23383#27597
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 8
     OnClick = Button9Click
   end
@@ -101,6 +155,12 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = #21305#37197#20960#20010#33539#22260
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 9
     OnClick = Button10Click
   end
@@ -110,285 +170,493 @@ object frmMain: TfrmMain
     Width = 120
     Height = 25
     Caption = '^ '#25490#38500'[ ]'#20013#30340#25152#26377
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 10
     OnClick = Button11Click
   end
   object Button12: TButton
     Left = 168
-    Top = 28
+    Top = 24
     Width = 120
     Height = 25
     Caption = '\d '#21305#37197#25152#26377#25968#23383
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 11
     OnClick = Button12Click
   end
   object Button13: TButton
     Left = 168
-    Top = 65
+    Top = 60
     Width = 120
     Height = 25
     Caption = '\D '#21305#37197#25152#26377#38750#25968#23383
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 12
     OnClick = Button13Click
   end
   object Button14: TButton
     Left = 168
-    Top = 101
+    Top = 96
     Width = 120
     Height = 25
     Caption = '\w '#21305#37197#23383#27597#25968#19979#21010
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 13
     OnClick = Button14Click
   end
   object Button15: TButton
     Left = 168
-    Top = 137
+    Top = 132
     Width = 120
     Height = 25
     Caption = '\W '#38750#23383#27597#25968#23383#19979#21010
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 14
     OnClick = Button15Click
   end
   object Button16: TButton
     Left = 168
-    Top = 173
+    Top = 168
     Width = 120
     Height = 25
     Caption = '\s '#21305#37197#20219#20309#31354#30333
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 15
     OnClick = Button16Click
   end
   object Button17: TButton
     Left = 168
-    Top = 208
+    Top = 204
     Width = 120
     Height = 25
     Caption = '\S '#21305#37197#20219#20309#38750#31354#30333
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 16
     OnClick = Button17Click
   end
   object Button18: TButton
     Left = 168
-    Top = 244
+    Top = 240
     Width = 120
     Height = 25
     Caption = '\x'#21305#37197#21313#20845#36827#21046'ASCII'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 17
     OnClick = Button18Click
   end
   object Button19: TButton
     Left = 168
-    Top = 280
+    Top = 276
     Width = 121
     Height = 25
     Caption = '. '#38500#25442#34892#22806#20219#20309#23383#31526
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 18
     OnClick = Button19Click
   end
   object Button20: TButton
     Left = 168
-    Top = 316
+    Top = 312
     Width = 121
     Height = 25
     Caption = '\b '#21333#35789#36793#30028
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 19
     OnClick = Button20Click
   end
   object Button21: TButton
     Left = 168
-    Top = 352
+    Top = 348
     Width = 121
     Height = 25
     Caption = '\B '#38750#21333#35789#36793#30028
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 20
     OnClick = Button21Click
   end
   object Button22: TButton
     Left = 168
-    Top = 389
+    Top = 384
     Width = 121
     Height = 25
     Caption = '^ '#25110'\A '#34892#39318
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 21
     OnClick = Button22Click
   end
   object Button23: TButton
-    Left = 304
-    Top = 25
+    Left = 312
+    Top = 24
     Width = 121
     Height = 25
     Caption = '$ '#25110' \Z '#34892#23614
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 22
     OnClick = Button23Click
   end
   object Button24: TButton
-    Left = 304
-    Top = 61
+    Left = 312
+    Top = 60
     Width = 121
     Height = 25
     Caption = #36138#23146#21305#37197
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 23
     OnClick = Button24Click
   end
   object Button25: TButton
-    Left = 304
-    Top = 104
+    Left = 312
+    Top = 96
     Width = 120
     Height = 25
     Caption = #38750#36138#23146#21305#37197
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 24
     OnClick = Button25Click
   end
   object Button26: TButton
     Left = 312
-    Top = 140
+    Top = 132
     Width = 120
     Height = 25
-    Caption = 'Button25'
+    Caption = #21305#37197#36716#20041#23383#31526
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 25
+    OnClick = Button26Click
   end
   object Button27: TButton
     Left = 312
-    Top = 176
+    Top = 168
     Width = 120
     Height = 25
-    Caption = 'Button25'
+    Caption = #24341#29992#23376#34920#36798#24335
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 26
+    OnClick = Button27Click
   end
   object Button28: TButton
     Left = 312
-    Top = 212
+    Top = 204
     Width = 120
     Height = 25
-    Caption = 'Button25'
+    Caption = #20020#30028#21305#37197
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 27
+    OnClick = Button28Click
   end
   object Button29: TButton
     Left = 312
-    Top = 249
+    Top = 240
     Width = 120
     Height = 25
-    Caption = 'Button25'
+    Caption = #26597#25214
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 28
+    OnClick = Button29Click
   end
   object Button30: TButton
     Left = 312
-    Top = 285
+    Top = 276
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 29
   end
   object Button31: TButton
     Left = 312
-    Top = 321
+    Top = 312
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 30
   end
   object Button32: TButton
     Left = 312
-    Top = 357
+    Top = 348
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 31
   end
   object Button33: TButton
-    Left = 304
-    Top = 389
+    Left = 312
+    Top = 384
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 32
   end
   object Button34: TButton
     Left = 456
-    Top = 28
+    Top = 24
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 33
   end
   object Button35: TButton
     Left = 456
-    Top = 64
+    Top = 60
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 34
   end
   object Button36: TButton
     Left = 456
-    Top = 100
+    Top = 96
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 35
   end
   object Button37: TButton
     Left = 456
-    Top = 137
+    Top = 132
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 36
   end
   object Button38: TButton
     Left = 456
-    Top = 173
+    Top = 168
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 37
   end
   object Button39: TButton
     Left = 456
-    Top = 209
+    Top = 204
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 38
   end
   object Button40: TButton
     Left = 456
-    Top = 245
+    Top = 240
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 39
   end
   object Button41: TButton
-    Left = 448
-    Top = 277
+    Left = 456
+    Top = 276
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 40
   end
   object Button42: TButton
-    Left = 464
-    Top = 321
+    Left = 456
+    Top = 312
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 41
   end
   object Button43: TButton
-    Left = 464
-    Top = 357
+    Left = 456
+    Top = 348
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 42
   end
   object Button44: TButton
     Left = 456
-    Top = 389
+    Top = 384
     Width = 120
     Height = 25
     Caption = 'Button25'
+    Font.Charset = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = #23435#20307
+    Font.Style = []
+    ParentFont = False
     TabOrder = 43
   end
   object Timer1: TTimer
